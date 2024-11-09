@@ -1,0 +1,66 @@
+/* CSS Document for Grid and Table Assignment */
+
+*{
+padding: 0;
+margin: 0;
+border: 0;
+}
+
+.item1{grid-area: header;}
+.item2{grid-area: menu;}
+.item3{grid-area: main;}
+.item4{grid-area: footer;}
+
+.grid-container{
+display: grid;
+grid-template-areas:
+'header header'
+'menu main'
+'footer footer';
+gap: 10px;
+background-color: #09a0e6;
+padding: 10px;
+}
+
+.item2{
+height: 100vh;
+}
+
+.grid-container > div{
+background-color: #09e6e6;
+padding: 5px;
+}
+
+.item1, .item4{text-align: center;}
+
+h2{
+text-align: center;
+}
+
+ul{
+list-style: none;
+}
+
+table{
+border-collapse: collapse;
+width: 70%;
+margin: auto;
+}
+
+td, th{
+border: 1px solid #000000;
+padding: 8px;
+}
+
+tr:nth-child(even){
+background-color: #09E6E6;
+}
+
+tr:nth-child(odd){
+background-color: #09A0E6;
+}
+
+caption{
+font-weight: bold;
+font-size: 1.5em;
+}
